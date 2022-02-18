@@ -1,0 +1,261 @@
+body {
+    /* background-color: rgb(191, 154, 219); */
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    @media only screen and (min-width: 1000px) {
+        width: 150%;
+    }
+}
+
+header {
+    /*background-color: #E6B8C1;*/
+    background-color: black;
+    height: 110px;
+    width: 100%;
+    bottom: 100px;
+}
+
+#mainlist {
+    display: inline-block;
+}
+
+#mainlist-ul {
+    list-style: none;
+    display: inline-block;
+}
+
+#mainlist-ul-2 {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    margin-left: 15vw;
+}
+
+aside {
+    float: left;
+}
+
+.mainlist-li {
+    margin-right: 60px;
+    float: left;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 20%;
+    height: 40%;
+    margin-left: 10%;
+    padding-top: 20px;
+    margin-bottom: 90px;
+    float: left;
+    font-size: large;
+    background-color: rgba(240, 248, 255, 0.452);
+    @media only screen and (min-width: 600px) {
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .card {
+        width: 80%;
+        height: 500px;
+    }
+}
+
+.icon-block {
+    padding-left: 80%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2px 16px;
+    padding-bottom: 1px;
+}
+
+#image {
+    margin-top: 140px;
+    margin-left: 9vw;
+    float: left;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#me {
+    border-radius: 50%;
+    width: 20vw;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+a.main {
+    font-weight: normal;
+    color: blanchedalmond;
+    text-decoration: none;
+    font-family: Fantasy;
+    /*color: #E6B8C1;*/
+}
+
+a.main:hover {
+    font-size: 200%;
+}
+
+section {
+    background-color: rgb(114, 68, 95);
+    height: 120vh;
+    margin-top: 20%;
+}
+
+a.aboutLink {
+    font-weight: lighter;
+    color: blanchedalmond;
+    text-decoration: none;
+    margin-left: 5px;
+    /*color: #E6B8C1;*/
+}
+
+#spotify {
+    margin-top: 8vh;
+    text-align: center;
+    width: 40%;
+}
+
+iframe {
+    margin-left: 25vw;
+    display: block;
+}
+
+article {
+    float: left;
+    margin-bottom: 100px;
+    width: 55vw;
+    color: white;
+    padding-left: 100px;
+    margin-left: 4px;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 180px;
+    padding-right: 50px;
+    height: 1000px;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 37vw;
+    margin-right: 9vw;
+    padding-top: 18vh;
+    color: #f7efee;
+    /*font-family: monospace;*/
+    font-weight: lighter;
+    font-size: 2vw;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    75% {
+        font-size: 300%;
+        margin-left: 35%;
+        width: 150%;
+    }
+    to {
+        margin-left: 40%;
+        width: 100%;
+    }
+}
+
+#about-me {
+    text-align: right;
+    margin-left: 30vw;
+}
+
+aside {
+    width: 15vw;
+    float: left;
+    margin-left: 2%;
+}
+
+#about {
+    margin-top: 100px;
+}
+
+#cat {
+    width: 100%;
+}
+
+h2 {
+    padding-left: 100px;
+    padding-bottom: 50px;
+    color: #f7efee;
+}
+
+@media only screen and (max-width: 900px) {
+    #about-me {
+        text-align: left;
+        margin-left: 0px;
+    }
+    iframe {
+        margin-left: 0vw;
+    }
+    #me {
+        border-radius: 50%;
+        width: 230px;
+    }
+    #image {
+        margin-top: 10vh;
+        text-align: center;
+        margin-left: 0vw;
+        width: 100%;
+        position: relative;
+    }
+    h1 {
+        margin-left: 10vw;
+        padding-top: 40vh;
+        font-size: 1.5em;
+        animation-name: none;
+    }
+    #mainlist-ul-2 {
+        list-style: none;
+        display: flexbox;
+        float: left;
+        margin-left: 5vw;
+    }
+    .mainlist-li {
+        margin-right: 30px;
+    }
+    #spotify {
+        display: none;
+    }
+    #spotify {
+        margin-top: 8vh;
+        text-align: center;
+        width: 40%;
+    }
+    iframe {
+        margin-left: 25vw;
+        display: none;
+    }
+    section {
+        background-color: rgb(114, 68, 95);
+        height: 400vh;
+        margin-top: 20%;
+    }
+}
