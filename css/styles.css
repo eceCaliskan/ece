@@ -65,7 +65,7 @@ body {
     transition: 0.3s;
     width: 22vw;
     box-sizing: border-box;
-    height: 480px;
+    height: 500px;
     margin-left: 8%;
     padding-top: 20px;
     margin-bottom: 90px;
@@ -100,6 +100,7 @@ body {
 }
 
 #image {
+    width: 30vh;
     margin-top: 140px;
     margin-left: 9vw;
     float: left;
@@ -247,7 +248,7 @@ h2 {
         margin-left: 0px;
     }
     .card {
-        width: 70%;
+        width: 80%;
         padding-top: 1px;
         margin-bottom: 20px;
     }
@@ -259,7 +260,7 @@ h2 {
         width: 230px;
     }
     #image {
-        margin-top: 0vh;
+        margin-top: 10vh;
         text-align: center;
         margin-left: 0vw;
         width: 100%;

@@ -1,6 +1,10 @@
 const image = document.getElementById('me');
 
 
+
+
+
+
 image.addEventListener("click", myFunction)
 
 function myFunction() {
@@ -13,11 +17,13 @@ function myFunction() {
 }
 
 function bigImg(x) {
-    x.style.width = "32vh";
+    x.style.width = "30vh";
+
+
 }
 
 function normalImg(x) {
-    x.style.width = "29vh";
+    x.style.width = "20vh";
 }
 
 
