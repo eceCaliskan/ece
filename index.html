@@ -4,7 +4,6 @@
 <head>
     <link href="../css/styles.css" rel="stylesheet" />
 
-    <link href="../scrippt/script.js" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -15,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav id="mainlist">
             <ul id="mainlist-ul">
                 <li class="mainlist-li">
@@ -24,28 +23,29 @@
                 <li class="mainlist-li">
                     <h3><a href="#project" class="main">Projects</a></h3>
                 </li>
-
                 <li class="mainlist-li">
                     <iframe src="https://open.spotify.com/embed/playlist/5FlgRYbzgF1VfuXOntasCW?utm_source=generator&theme=0" width="100%" height="80" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                 </li>
+
+
             </ul>
         </nav>
     </header>
 
     <div id="image">
-        <img src="../image/me.png" id="me" />
+        <img src="../image/me.png" onmouseover=bigImg(this) onmouseout=normalImg(this) id="me" />
     </div>
     <div>
-        <h1>
-            I am a software developer who loves anything related to javascript, php and java. I also love smiley emojis and chocolate cake, but not as much as Vue.js...
+        <h1 id="main">
+            I am a software developer who loves anything related to javascript, php and java. I also love smiley emojis and chocolate cakes, but not as much as Javascript...
         </h1>
         <div id="about-me">
             <nav>
                 <ul id="mainlist-ul-2">
                     <li class="mainlist-li">
                         <h3>
-                            <i class="fa fa-envelope" style="font-size: 36px; color: white"></i
-                ><a href="mailto:ece98caliskan@gmail.com" class="aboutLink"
+                            <i class="fa fa-envelope" style="font-size: 1.5em; color: white"></i
+                ><a href="mailto:ece98caliskan@gmail.com" onmouseover=biglink(this) onmouseout=normallink(this) class="aboutLink class="aboutLink"
                   >Mail</a
                 >
               </h3>
@@ -54,10 +54,11 @@
               <h3>
                 <i
                   class="fa fa-linkedin-square"
-                  style="font-size: 36px; color: white"
+                  style="font-size: 1.5em; color: white"
                 ></i
                 ><a
                   href="https://www.linkedin.com/in/ececaliskan22/"
+                  onmouseover=biglink(this) onmouseout=normallink(this)
                   class="aboutLink"
                   >Linkedin</a
                 >
@@ -67,9 +68,9 @@
               <h3>
                 <i
                   class="fa fa-github"
-                  style="font-size: 36px; color: white"
+                  style="font-size: 1.5em; color: white"
                 ></i
-                ><a href="https://github.com/eceCaliskan" class="aboutLink"
+                ><a href="https://github.com/eceCaliskan" onmouseover=biglink(this) onmouseout=normallink(this) class="aboutLink"
                   >GitHub</a
                 >
               </h3>
@@ -77,7 +78,7 @@
           </ul>
         </nav>
       </div>
-   <script src="./script/script.js"></script>
+<script src="script.js"></script>
 
       <section id="project">
     </br>
@@ -85,56 +86,58 @@
 
 <h2>My Projects</h2>
         <div class="card">
-          <a href="./image/angular.png"><img src="./image/angular.png" alt="Avatar" style="width:100%"></a>
+          <a href="./image/angular.png"><img src="./image/angular.png" alt="Avatar" style="width:100%"height="200px;"></a>
           <div class="container">
             <h3><b>Angular RestApi Blog Website</b></h3> 
-            <p>A perfect website to make your dreams come true, and start posting your wonderful blogs for whole world to see
+            <p>A perfect Angular website to make your dreams come true and inspire you to start posting your wonderful blogs for whole world to see 
           </p>
-            <a href="https://github.com/eceCaliskan/angular-blog-website" class="icon-block">
-              <i class="fa fa-github" style="font-size: 36px; color: white"></i></a>
-                            <h3>
-                            </h3>
+          <a href="https://github.com/eceCaliskan/angular-blog-website" class="icon-block">
+            <i class="fa fa-github" style="font-size: 36px; color: white"></i></a>
+
         </div>
     </div>
 
+
     <div class="card">
-        <a href="./image/lara.png"><img src="./image/lara.png" alt="Avatar" style="width:100%"></a>
+        <a href="./image/lara.png"><img src="./image/lara.png" alt="Avatar" style="width:100%" height="200px;"></a>
         <div class="container">
             <h3><b>Laravel Mysql Tailwind Employee Management</b></h3>
-            <p>Sometimes the company is too large to the point where you don't know the name of the person thats sitting accross your table. This management system will help you track all of your employess .
+            <p id="ok">Never forget the names of the your employees ever again. With this system generated with Laravel, Mysql and Tailwind, keep track of your employees.
             </p>
             <a href="https://github.com/eceCaliskan/laravel-emp-management" class="icon-block">
                 <i class="fa fa-github" style="font-size: 36px; color: white"></i></a>
-            <h3>
-            </h3>
+
         </div>
     </div>
 
-    <div class="card">
-        <a href="./image/password.png"><img src="./image/password.png" alt="Avatar" style="width:100%"></a>
+    <div class="card" onmouseover=bigcard(this)>
+        <a href="./image/password.png"><img src="./image/password.png" alt="Avatar" style="width:100%" height="200px;"></a>
         <div class="container">
             <h3><b>Vanilla Javacsript Password Generator</b></h3>
-            <p>Are you tired of having insecure passwords? Use this generator to generate passwords with the length you choose. Moreover, you can include symbols, numbers and mixture of capital and lowercase letters. Ps. Everything you need from a password
-                generator.
+            <p>Are you tired of having insecure passwords? Use this generator to generate passwords with the length you choose. Moreover, you can include symbols, numbers and mixture of capital and lowercase letters.
             </p>
             <a href="https://github.com/eceCaliskan/password-generator" class="icon-block">
                 <i class="fa fa-github" style="font-size: 36px; color: white"></i></a>
         </div>
     </div>
-    <div class="card">
-        <img src="./image/code.jpeg" alt="Avatar" style="width:100%">
+    <div class="card" onmouseover=bigcard(this)>
+        <a href="./image/movie.png"><img src="./image/movie.png" alt="Avatar" style="width:100%" height="200px;"></a>
         <div class="container">
-            <h4><b>John Doe</b></h4>
-            <p>Architect & Engineer</p>
+            <h3><b>Vuejs Movie Collection</b></h3>
+            <p>Add your favourite movies to your own movie collection generated with Vuejs and Rest Api and never watch the same movie twice.
+            </p>
+            <a href="https://github.com/eceCaliskan/password-generator" class="icon-block">
+                <i class="fa fa-github" style="font-size: 36px; color: white"></i></a>
         </div>
     </div>
-
-
-    <div class="card">
-        <img src="./image/code.jpeg" alt="Avatar" style="width:100%">
+    <div class="card" onmouseover=bigcard(this)>
+        <a href="./image/hamburger.png"><img src="./image/hamburger.png" alt="Avatar" style="width:100%" height="200px;"></a>
         <div class="container">
-            <h4><b>John Doe</b></h4>
-            <p>Architect & Engineer</p>
+            <h3><b>Random Hamburger Generator</b></h3>
+            <p>Would you see different hamburger from all around the world? If yes, use this random generator built using a Hamburger Api, Html, Ajax, Jquery and Css and discover new hamburgers
+            </p>
+            <a href="https://github.com/eceCaliskan/password-generator" class="icon-block">
+                <i class="fa fa-github" style="font-size: 36px; color: white"></i></a>
         </div>
     </div>
 
@@ -143,6 +146,8 @@
     </div>
 
     <div id="about"></div>
+
+
 </body>
 
 </html>
