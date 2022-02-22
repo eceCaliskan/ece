@@ -1,9 +1,5 @@
 const image = document.getElementById('me');
 
-const el = document.getElementsByClassName('card')[0];
-
-
-
 
 image.addEventListener("click", myFunction)
 
@@ -18,8 +14,6 @@ function myFunction() {
 
 function bigImg(x) {
     x.style.width = "32vh";
-
-
 }
 
 function normalImg(x) {
@@ -28,11 +22,11 @@ function normalImg(x) {
 
 
 function biglink(x) {
-    x.style.fontSize = "1em";
+    x.style.fontSize = "1.5em";
     x.style.color = "pink";
 }
 
 function normallink(x) {
-    x.style.fontSize = "0.5em";
+    x.style.fontSize = "1em";
     x.style.color = "white";
 }
