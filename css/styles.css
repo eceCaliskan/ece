@@ -2,6 +2,19 @@
     box-sizing: border-box;
 }
 
+li {
+    list-style: none;
+}
+
+li:before {
+    content: "✰";
+    padding-right: 15px;
+}
+
+li:nth-child(2n) {
+    color: rgb(114, 68, 95);
+}
+
 body {
     /* background-color: rgb(191, 154, 219); */
     background-color: black;
