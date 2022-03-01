@@ -2,16 +2,16 @@
     box-sizing: border-box;
 }
 
-li {
+.skills {
     list-style: none;
 }
 
-li:before {
+.skills:before {
     content: "✰";
     padding-right: 15px;
 }
 
-li:nth-child(2n) {
+.skills:nth-child(2n) {
     color: rgb(114, 68, 95);
 }
 
@@ -264,6 +264,7 @@ h2 {
         width: 80%;
         padding-top: 1px;
         margin-bottom: 20px;
+        height: 440px;
     }
     iframe {
         margin-left: 0vw;
@@ -308,8 +309,8 @@ h2 {
     }
     section {
         background-color: rgb(114, 68, 95);
-        min-height: 2760px;
-        max-height: 3760px;
+        min-height: 2960px;
+        max-height: 4960px;
         margin-top: 20%;
     }
     .card:hover {
